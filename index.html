@@ -46,7 +46,7 @@
     .hero h1 {
       margin-bottom: 10px;
       font-size: 36px;
-      min-height: 45px; /* Reserve space for the animation */
+      min-height: 45px;
     }
 
     .hero h2 {
@@ -92,6 +92,35 @@
       color: #003f73;
     }
 
+    /* ✅ Animation Styles */
+    @keyframes fadeSlideDown {
+      0% {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .animate {
+      opacity: 0;
+      animation: fadeSlideDown 1s ease forwards;
+    }
+
+    .animate-delay-1 {
+      animation-delay: 0.3s;
+    }
+
+    .animate-delay-2 {
+      animation-delay: 0.6s;
+    }
+
+    .animate-delay-3 {
+      animation-delay: 0.9s;
+    }
+
     /* ✅ Responsive Design Enhancements */
     @media (max-width: 600px) {
       .hero {
@@ -126,11 +155,33 @@
   <div class="container">
     <section class="hero">
       <h1><span id="typed-text"></span></h1>
-      <h2>IT Professional | Network & Support Specialist</h2>
-      <p>
+      <h2 class="animate animate-delay-1">IT Professional | Network & Support Specialist</h2>
+      <p class="animate animate-delay-2">
         I am a results-driven IT professional with a strong background in networking and IT support, currently pursuing my Master of Science in Information Technology Management. I specialize in configuring and troubleshooting network environments to ensure seamless connectivity and performance. My expertise extends to managing incoming IT tickets, providing timely and effective resolution of technical issues.
       </p>
-      <a href="resume.pdf" class="btn" download>Download Resume</a>
+
+      <!-- ✅ Quick Facts Section -->
+      <div class="quick-facts animate animate-delay-2" style="margin: 30px 0;">
+        <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; text-align: center;">
+          <div style="flex: 1 1 200px;">
+            <h3 style="margin: 0; font-size: 24px;">3+ Years</h3>
+            <p style="margin: 5px 0;">Experience</p>
+          </div>
+          <div style="flex: 1 1 200px;">
+            <h3 style="margin: 0; font-size: 24px;">5+ Projects</h3>
+            <p style="margin: 5px 0;">Completed</p>
+          </div>
+          <div style="flex: 1 1 200px;">
+            <h3 style="margin: 0; font-size: 24px;">4+ Certifications</h3>
+            <p style="margin: 5px 0;">Earned</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- ✅ Resume Button -->
+      <a href="resume.pdf" class="btn animate animate-delay-3" download>Download Resume</a>
+
+      <!-- ✅ Contact Links -->
       <div class="social-links">
         <a href="https://linkedin.com/in/manindersingh111" target="_blank">LinkedIn</a>
         <a href="mailto:singhmaninder1245@gmail.com">Email</a>
@@ -153,4 +204,3 @@
   </script>
 </body>
 </html>
-
