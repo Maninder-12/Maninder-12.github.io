@@ -92,6 +92,22 @@
       color: #003f73;
     }
 
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      color: #555;
+    }
+
+    footer a {
+      color: #0077cc;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
     /* ✅ Animation Styles */
     @keyframes fadeSlideDown {
       0% {
@@ -152,7 +168,7 @@
   </style>
 </head>
 <body>
-  <div class="container">
+  <div class="container" id="top">
     <section class="hero">
       <h1><span id="typed-text"></span></h1>
       <h2 class="animate animate-delay-1">IT Professional | Network & Support Specialist</h2>
@@ -164,7 +180,7 @@
       <div class="quick-facts animate animate-delay-2" style="margin: 30px 0;">
         <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; text-align: center;">
           <div style="flex: 1 1 200px;">
-            <h3 style="margin: 0; font-size: 24px;">3+ Years</h3>
+            <h3 style="margin: 0; font-size: 24px;">2+ Years</h3>
             <p style="margin: 5px 0;">Experience</p>
           </div>
           <div style="flex: 1 1 200px;">
@@ -190,6 +206,12 @@
       </div>
     </section>
   </div>
+
+  <!-- ✅ Footer -->
+  <footer>
+    &copy; 2025 Maninder Singh &nbsp;|&nbsp;
+    <a href="#top">Back to Top</a>
+  </footer>
 
   <!-- ✅ Typed.js Initialization -->
   <script>
