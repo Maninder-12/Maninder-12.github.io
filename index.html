@@ -11,6 +11,9 @@
   <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
+  <!-- ✅ Typed.js Library -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
   <style>
     body {
       margin: 0;
@@ -43,6 +46,7 @@
     .hero h1 {
       margin-bottom: 10px;
       font-size: 36px;
+      min-height: 45px; /* Reserve space for the animation */
     }
 
     .hero h2 {
@@ -121,7 +125,7 @@
 <body>
   <div class="container">
     <section class="hero">
-      <h1>Maninder Singh</h1>
+      <h1><span id="typed-text"></span></h1>
       <h2>IT Professional | Network & Support Specialist</h2>
       <p>
         I am a results-driven IT professional with a strong background in networking and IT support, currently pursuing my Master of Science in Information Technology Management. I specialize in configuring and troubleshooting network environments to ensure seamless connectivity and performance. My expertise extends to managing incoming IT tickets, providing timely and effective resolution of technical issues.
@@ -135,5 +139,18 @@
       </div>
     </section>
   </div>
+
+  <!-- ✅ Typed.js Initialization -->
+  <script>
+    var typed = new Typed("#typed-text", {
+      strings: ["Hello, I am Maninder Singh"],
+      typeSpeed: 50,
+      backSpeed: 25,
+      showCursor: true,
+      cursorChar: '|',
+      loop: false
+    });
+  </script>
 </body>
 </html>
+
