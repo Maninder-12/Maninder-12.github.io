@@ -190,9 +190,10 @@
       <h2 class="animate animate-delay-1">IT Professional | Network & Support Specialist</h2>
       <img src="profile.jpg" alt="Maninder Singh" class="profile-pic animate animate-delay-2" />
       <p class="animate animate-delay-2">
-        I am a results-driven IT professional with a strong background in networking and IT support, currently pursuing my Master of Science in Information Technology Management. I specialize in configuring and troubleshooting network environments to ensure seamless connectivity and performance. My expertise extends to managing incoming IT tickets, providing timely and effective resolution of technical issues. Although my career has primarily focused on IT, I also possess strong programming skills and a deep passion for full-stack web development. I am proficient in technologies such as Python, HTML, CSS, JavaScript, React.js, and Next.js. I have developed websites to help promote and market small businesses and have worked on several hands-on projects throughout my academic coursework. 
+        I am a results-driven IT professional with a strong background in networking and IT support, currently pursuing my Master of Science in Information Technology Management. I specialize in configuring and troubleshooting network environments to ensure seamless connectivity and performance. My expertise extends to managing incoming IT tickets, providing timely and effective resolution of technical issues.
       </p>
 
+      <!-- ✅ Quick Facts Section -->
       <div class="quick-facts animate animate-delay-2" style="margin: 30px 0;">
         <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; text-align: center;">
           <div style="flex: 1 1 200px;">
@@ -210,8 +211,10 @@
         </div>
       </div>
 
+      <!-- ✅ Resume Button -->
       <a href="resume.pdf" class="btn animate animate-delay-3" download>Download Resume</a>
 
+      <!-- ✅ Contact Links -->
       <div class="social-links animate animate-delay-3">
         <a href="https://linkedin.com/in/manindersingh111" target="_blank">LinkedIn</a>
         <a href="mailto:singhmaninder1245@gmail.com">Email</a>
@@ -219,51 +222,58 @@
         <a href="tel:+17184155542">Phone Number</a>
       </div>
 
+      <!-- ✅ Availability Message -->
       <p class="animate animate-delay-3" style="font-weight: 500; font-size: 14px; margin-top: 20px; color: #444;">
         Let’s work together — available for freelance web development and IT consulting opportunities.
       </p>
     </section>
   </div>
 
+  <!-- ✅ Footer -->
   <footer>
     &copy; 2025 Maninder Singh &nbsp;|&nbsp;
     <a href="#top">Back to Top</a>
   </footer>
 
+  <!-- ✅ Typed.js Initialization -->
   <script>
-    new Typed("#typed-text", {
-      strings: ["Hello, I am Maninder Singh"],
-      typeSpeed: 50,
-      backSpeed: 25,
-      showCursor: true,
-      cursorChar: '|',
-      loop: false
-    });
+    document.addEventListener("DOMContentLoaded", function () {
+      // Typing for name/title
+      new Typed("#typed-text", {
+        strings: ["Hello, I am Maninder Singh"],
+        typeSpeed: 50,
+        backSpeed: 25,
+        showCursor: true,
+        cursorChar: '|',
+        loop: false
+      });
 
-    new Typed("#typed-exp", {
-      strings: ["2+ Years"],
-      typeSpeed: 50,
-      backSpeed: 25,
-      showCursor: false,
-      loop: false
-    });
+      // Typing for quick facts
+      new Typed("#typed-exp", {
+        strings: ["2+ Years"],
+        typeSpeed: 50,
+        backSpeed: 25,
+        showCursor: false,
+        loop: false
+      });
 
-    new Typed("#typed-projects", {
-      strings: ["5+ Projects"],
-      typeSpeed: 50,
-      backSpeed: 25,
-      startDelay: 500,
-      showCursor: false,
-      loop: false
-    });
+      new Typed("#typed-projects", {
+        strings: ["5+ Projects"],
+        typeSpeed: 50,
+        backSpeed: 25,
+        startDelay: 500,
+        showCursor: false,
+        loop: false
+      });
 
-    new Typed("#typed-certs", {
-      strings: ["4+ Certifications"],
-      typeSpeed: 50,
-      backSpeed: 25,
-      startDelay: 1000,
-      showCursor: false,
-      loop: false
+      new Typed("#typed-certs", {
+        strings: ["4+ Certifications"],
+        typeSpeed: 50,
+        backSpeed: 25,
+        startDelay: 1000,
+        showCursor: false,
+        loop: false
+      });
     });
   </script>
 </body>
