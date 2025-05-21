@@ -113,15 +113,14 @@
     }
 
     .profile-pic {
-      width: 150px;
-      height: 150px;
+      width: 225px;
+      height: 225px;
       border-radius: 50%;
       object-fit: cover;
       margin-bottom: 20px;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     }
 
-    /* ✅ Animation Styles */
     @keyframes fadeSlideDown {
       0% {
         opacity: 0;
@@ -150,7 +149,6 @@
       animation-delay: 0.9s;
     }
 
-    /* ✅ Responsive Design Enhancements */
     @media (max-width: 600px) {
       .hero {
         padding: 20px;
@@ -177,6 +175,11 @@
         margin: 8px 0;
         text-align: center;
       }
+
+      .profile-pic {
+        width: 180px;
+        height: 180px;
+      }
     }
   </style>
 </head>
@@ -187,31 +190,28 @@
       <h2 class="animate animate-delay-1">IT Professional | Network & Support Specialist</h2>
       <img src="profile.jpg" alt="Maninder Singh" class="profile-pic animate animate-delay-2" />
       <p class="animate animate-delay-2">
-        I am a results-driven IT professional with a strong background in networking and IT support, currently pursuing my Master of Science in Information Technology Management. I specialize in configuring and troubleshooting network environments to ensure seamless connectivity and performance. My expertise extends to managing incoming IT tickets, providing timely and effective resolution of technical issues. Although my career has primarily focused on IT, I also possess strong programming skills and a deep passion for full-stack web development. I am proficient in technologies such as Python, HTML, CSS, JavaScript, React.js, and Next.js. I have developed websites to help promote and market small businesses and have worked on several hands-on projects throughout my academic coursework. 
+        I am a results-driven IT professional with a strong background in networking and IT support, currently pursuing my Master of Science in Information Technology Management. I specialize in configuring and troubleshooting network environments to ensure seamless connectivity and performance. My expertise extends to managing incoming IT tickets, providing timely and effective resolution of technical issues.
       </p>
 
-      <!-- ✅ Quick Facts Section -->
       <div class="quick-facts animate animate-delay-2" style="margin: 30px 0;">
         <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; text-align: center;">
           <div style="flex: 1 1 200px;">
-            <h3 style="margin: 0; font-size: 24px;">2+ Years</h3>
+            <h3 style="margin: 0; font-size: 24px;"><span id="typed-exp"></span></h3>
             <p style="margin: 5px 0;">Experience</p>
           </div>
           <div style="flex: 1 1 200px;">
-            <h3 style="margin: 0; font-size: 24px;">5+ Projects</h3>
+            <h3 style="margin: 0; font-size: 24px;"><span id="typed-projects"></span></h3>
             <p style="margin: 5px 0;">Completed</p>
           </div>
           <div style="flex: 1 1 200px;">
-            <h3 style="margin: 0; font-size: 24px;">4+ Certifications</h3>
+            <h3 style="margin: 0; font-size: 24px;"><span id="typed-certs"></span></h3>
             <p style="margin: 5px 0;">Earned</p>
           </div>
         </div>
       </div>
 
-      <!-- ✅ Resume Button -->
       <a href="resume.pdf" class="btn animate animate-delay-3" download>Download Resume</a>
 
-      <!-- ✅ Contact Links -->
       <div class="social-links animate animate-delay-3">
         <a href="https://linkedin.com/in/manindersingh111" target="_blank">LinkedIn</a>
         <a href="mailto:singhmaninder1245@gmail.com">Email</a>
@@ -219,27 +219,50 @@
         <a href="tel:+17184155542">Phone Number</a>
       </div>
 
-      <!-- ✅ Availability Message -->
       <p class="animate animate-delay-3" style="font-weight: 500; font-size: 14px; margin-top: 20px; color: #444;">
         Let’s work together — available for freelance web development and IT consulting opportunities.
       </p>
     </section>
   </div>
 
-  <!-- ✅ Footer -->
   <footer>
     &copy; 2025 Maninder Singh &nbsp;|&nbsp;
     <a href="#top">Back to Top</a>
   </footer>
 
-  <!-- ✅ Typed.js Initialization -->
   <script>
-    var typed = new Typed("#typed-text", {
+    new Typed("#typed-text", {
       strings: ["Hello, I am Maninder Singh"],
       typeSpeed: 50,
       backSpeed: 25,
       showCursor: true,
       cursorChar: '|',
+      loop: false
+    });
+
+    new Typed("#typed-exp", {
+      strings: ["2+ Years"],
+      typeSpeed: 50,
+      backSpeed: 25,
+      showCursor: false,
+      loop: false
+    });
+
+    new Typed("#typed-projects", {
+      strings: ["5+ Projects"],
+      typeSpeed: 50,
+      backSpeed: 25,
+      startDelay: 500,
+      showCursor: false,
+      loop: false
+    });
+
+    new Typed("#typed-certs", {
+      strings: ["4+ Certifications"],
+      typeSpeed: 50,
+      backSpeed: 25,
+      startDelay: 1000,
+      showCursor: false,
       loop: false
     });
   </script>
